@@ -1,8 +1,8 @@
-FROM python:3.11.13-slim@sha256:<PINNED_DIGEST>
+FROM python:3.11-slim
 
 RUN pip install --no-cache-dir \
     pytest==8.4.1 \
-    pytest-json-ctrf==0.3.5
+    pytest-json-report==1.5.0
 
 WORKDIR /app
 
